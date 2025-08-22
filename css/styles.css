@@ -657,7 +657,7 @@ section {
 }
 
 /*benefits section*/
-.icon-bnf {
+/*.icon-bnf {
     display: none;;
 }
 
@@ -692,45 +692,77 @@ section {
     .bnf-li {
         width: calc((100% - 24px) / 2);
     }
-}
+}*/
 
-/*.icon-bnf {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 264px;
-    height: 112px;
-    background-color: #F4F4FD;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-    margin-bottom: 8px;
-}
-
-.icon-bnf svg {
-    width: 64px;
-    height: 64px;
-    margin: 0;
-}
-
-.bnf-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: #2e2f42;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
+.icon-bnf {
+    display: none;
 }
 
 .bnf-list {
     display: flex;
-    gap: 24px;
-    align-items: center;
-}
-
-.bnf-text {
-    color: #434455;
+    flex-wrap: wrap;
+    gap: 72px;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .bnf-li {
-    width: calc((100% - 72px / 4));
-}*/
+    flex: 1 1 100%;
+}
+
+.bnf-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.bnf-text {
+    font-weight: 500;
+    color: #434455;
+}
+
+@media screen and (min-width: 768px) {
+    .bnf-list {
+        gap: 72px 24px;
+    }
+    .bnf-title {
+        text-align: start;
+    }
+    .bnf-li {
+        flex: 1 1 calc((100% - 72px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .icon-bnf {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 264px;
+        height: 112px;
+        background-color: #F4F4FD;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+    .icon-bnf svg {
+        width: 64px;
+        height: 64px;
+        margin: 0;
+    }
+    .bnf-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    
+    .bnf-list {
+        gap: 24px;
+    }
+    .bnf-li {
+        flex: 1 1 calc((100% - 72px) / 4);
+    }
+}
