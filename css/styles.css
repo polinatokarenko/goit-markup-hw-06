@@ -766,3 +766,86 @@ section {
         flex: 1 1 calc((100% - 72px) / 4);
     }
 }
+
+/*team section*/
+.section-team {
+    background-color: #f4f4fd;
+}
+
+.team-title {
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.name-and-job-container {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #ffffff;
+}
+
+.names {
+    padding-top: 32px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: #2e2f42;
+}
+
+.work {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.icon-pack-team {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 32px;
+}
+
+.team-list-elem {
+    width: 40px;
+    height: 40px;
+}
+
+.svg-team-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-team-li:hover,
+.svg-team-li:focus {
+    background-color: #404BBF;
+}
+
+.svg-manage {
+    display: block;
+    fill: var(--cloud);
+}
+
+@media screen and (min-width: 768px) {
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 64px 24px;
+    }
+    .team-card {
+        width: ((100% - 24px) / 2);
+    }
+}
