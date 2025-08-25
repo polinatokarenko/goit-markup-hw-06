@@ -944,7 +944,7 @@ section {
 
 .footer-text {
     color: #F4F4FD;
-    max-width: 288px;
+    width: 288px;
 }
 
 .footer-studio {
@@ -1061,4 +1061,45 @@ section {
 .footer-subs-button:hover,
 .footer-subs-button:focus {
     background-color: #404BBF;
+}
+
+@media screen and (min-width: 768px) {
+    .container-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+        justify-content: baseline;
+        align-items: flex-start;
+    }
+    .footer-logo {
+        text-align: start;
+    }
+    .footer-text {
+        width: 264px;
+    }
+    .footer-sm-container {
+        margin: 0;
+    }
+    .footer-section-text {
+        text-align: start;
+    }
+    .footer-subs-form {
+        flex-direction: row;
+        gap: 16px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container-footer {
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+    .logo-footer-container {
+        margin-right: 120px;
+    }
+    .footer-sm-container {
+        margin-right: 80px;
+    }
 }
