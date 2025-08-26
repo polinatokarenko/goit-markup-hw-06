@@ -112,6 +112,7 @@ section {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+/*header*/
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
@@ -586,13 +587,19 @@ section {
 .first-section {
     background-color: #2e2f42;
     padding: 72px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/img-name.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/background-hero.jpg);
     min-width: 320px;
     min-height: 432px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
+}
+
+@media (min-resolution: 192dpi) {
+    .first-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/background-hero@2x.jpg);
+    }
 }
 
 .slogan {
